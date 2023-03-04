@@ -1,0 +1,30 @@
+<div>
+    <label for="title">Title</label>
+<input type="text" name="title" id="title">
+</div>
+<div>
+    <label for="date">Publisheddate</label>
+<input type="date" name="publishdate" id="date">
+</div>
+<div>
+    <label for="title">author</label>
+
+<select name="author" id="author">
+    <option selected>select Author</option>
+    {{#each author}}
+    <option value={{_id}} label={{name}}></option>
+    {{/each}}
+</select>
+
+</div>
+<div>
+    <label for="des">
+    <textarea name="description" id="des" cols="30" rows="10"></textarea>
+</label>
+</div>
+
+<div>
+    <label for="cover"></label>
+    <input type="file" name="cover" id="cover">
+</div>
+

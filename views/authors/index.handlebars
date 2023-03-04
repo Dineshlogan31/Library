@@ -1,0 +1,11 @@
+<h3>Authors</h3>
+<form action="" method="get">
+<label for="name"></label>
+<input type="text" name="name" id="name" value={{Msg}}>
+<button type="submit">Search</button>
+{{error}}
+</form>
+{{#each author}}
+<h4>{{name}}</h4>
+
+{{/each}}

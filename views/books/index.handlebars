@@ -1,0 +1,14 @@
+<h3>Books</h3>
+
+<form action="" method="get">
+    <label for="">
+        <input type="text" name="" id="" value="">
+        <button>Submit</button>
+    </label>
+</form>
+
+<h2>List of Books</h2>
+{{#each book}}
+{{title}}
+<img src={{trimString cover.0.path}} alt="" >
+{{/each}}
